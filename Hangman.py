@@ -70,14 +70,14 @@ class Hangman(ctk.CTk):
         --------            
         """
     ]
-    word_list = ['words']
+    word_list = ['words']              #Add your own words here
         
 
     def __init__(self):    
         super().__init__()
         self.title('Hangman')
         self.center_window(600,580)
-        self.iconbitmap('Icon Path') 
+        self.iconbitmap('Icon Path')         #Add your Icon path here
         
         self.grid_columnconfigure(1, weight=1)
         self.grid_columnconfigure((2, 3), weight=0)
@@ -174,7 +174,7 @@ class Hangman(ctk.CTk):
         input_window = ctk.CTk()
         input_window.title('Choose own word')
         input_window.geometry('300x200')
-        input_window.iconbitmap('Icon Path')
+        input_window.iconbitmap('Icon Path')                             #Add your Icon path here
 
         input_window_width = 300
         input_window_height = 150
@@ -200,7 +200,7 @@ class Hangman(ctk.CTk):
                 Error = ctk.CTk()
                 Error.title('Error')
                 Error.geometry('300x150')
-                Error.iconbitmap('Icon Path')
+                Error.iconbitmap('Icon Path')                             #Add your Icon path here
                 Error_width = 300
                 Error_height = 150
                 screen_width = Error.winfo_screenwidth()
@@ -278,7 +278,7 @@ class Hangman(ctk.CTk):
         end_window = ctk.CTk()
         end_window.title('End')
         end_window.geometry('300x150')
-        end_window.iconbitmap('Icon Path')
+        end_window.iconbitmap('Icon Path')                                     #Add your Icon path here
         end_window_width = 300
         end_window_height = 150
         screen_width = end_window.winfo_screenwidth()
