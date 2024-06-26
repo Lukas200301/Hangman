@@ -115,7 +115,7 @@ class Hangman(ctk.CTk):
         self.main_Frame.grid_columnconfigure(0, weight=1)
         self.main_Frame.grid_rowconfigure(6, weight=1)
 
-        self.word_label = ctk.CTkLabel(self.main_Frame, text='Wort:')
+        self.word_label = ctk.CTkLabel(self.main_Frame, text='Word:')
         self.word_label.grid(row=0, column=0, padx=(20, 10), pady=(10, 10), sticky="ew")
 
         self.guess_input = ctk.CTkEntry(self.main_Frame)
